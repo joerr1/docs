@@ -12,6 +12,8 @@ const config: Config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
+  organizationName,
+  projectName,
   // Set the production url of your site here
   url: 'https://${organizationName}.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -20,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'joerr1', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  //organizationName: 'joerr1', // Usually your GitHub org/user name.
+  //projectName: 'docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,8 +44,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            `https://github.com/${organizationName}/${projectName}/tree/main/packages/create-docusaurus/templates/shared/`,
+           editUrl:
+             `https://github.com/${organizationName}/${projectName}/tree/main/packages/create-docusaurus/templates/shared/`,
         },
         blog: {
           showReadingTime: true,
@@ -53,8 +55,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            `https://github.com/${organizationName}/${projectName}/tree/main/packages/create-docusaurus/templates/shared/`,
+           editUrl:
+             `https://github.com/${organizationName}/${projectName}/tree/main/packages/create-docusaurus/templates/shared/`,
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
