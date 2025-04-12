@@ -37,7 +37,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: aactions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           # 👇 Specify build output path
           path: build
