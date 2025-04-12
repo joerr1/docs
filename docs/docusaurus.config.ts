@@ -3,25 +3,24 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const organizationName = "joerr1";
 const projectName = "docs";
 
 const config: Config = {
-  organizationName: 'joerr1', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.  
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://${organizationName}.github.io',
+  url: `https://${organizationName}.github.io`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: `/${projectName}/`,
-
+  trailingSlash: false,
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
+  organizationName, // Usually your GitHub org/user name.
+  projectName, // Usually your repo name.
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -82,7 +81,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/${organizationName}/${projectName}',
           label: 'GitHub',
           position: 'right',
         },
@@ -126,7 +125,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/${organizationName}/${projectName}',
             },
           ],
         },
@@ -140,4 +139,5 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
+//export default config;
 export default config;
