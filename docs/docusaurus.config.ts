@@ -8,22 +8,17 @@ const organizationName = "joerr1";
 const projectName = "docs";
 
 const config: Config = {
+  organizationName: 'joerr1', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.  
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  organizationName,
-  projectName,
   // Set the production url of your site here
   url: 'https://${organizationName}.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: `/${projectName}/`,
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  //organizationName: 'joerr1', // Usually your GitHub org/user name.
-  //projectName: 'docs', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
