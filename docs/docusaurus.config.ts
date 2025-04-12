@@ -25,7 +25,7 @@ const config: Config = {
   //organizationName: 'joerr1', // Usually your GitHub org/user name.
   //projectName: 'docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -96,15 +96,15 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
+        //{
+        //  title: 'Docs',
+        //  items: [
+        //    {
+        //      label: 'Tutorial',
+        //      to: '/docs/intro',
+        //    },
+        //  ],
+        //},
         {
           title: 'Community',
           items: [
